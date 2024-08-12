@@ -40,7 +40,7 @@ const getAllTasks = async (req, res) => {
                     category: 1,
                     description: 1,
                     status : 1,
-                    due_date,
+                    due_date :1,
                     created_date: 1,
                     "userDetails.username": 1
 
