@@ -1,6 +1,6 @@
 const User = require('../Model/login');
 const EncryptPassword = require("../helper/hashPassword");
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const { signToken } = require('../helper/jwt');
 
 const register = async (req, res) => {
