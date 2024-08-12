@@ -1,4 +1,4 @@
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 const EncryptPassword = async (password) => {
     const saltRounds = 10;
