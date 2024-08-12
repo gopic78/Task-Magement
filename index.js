@@ -13,17 +13,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : false}));
 
 
-mongoose.connect(process.env.MONGODB_URI,{
-    useNewUrlParser : true,
-    useUnifiedTopology :  true
-})
-.then(()=>{
-    console.log("MongoDB connected successfully");
-})
-.catch((error)=>{
-    console.log("MongoDB not connected",error)
-})
-
+mongoose.connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }).then(() => {
+    console.log('MongoDB connected successfully');
+  }).catch((err) => {
+    console.error('MongoDB connection error:', err);
+  });
 //routes
 const user = require("./Router/login");
 const task = require('./Router/task');
