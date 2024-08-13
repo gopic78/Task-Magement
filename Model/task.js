@@ -18,8 +18,8 @@ const TaskSchema = new mongoose.Schema({
         enum: ['Pending', 'In Progress', 'Completed'],
         default: 'Pending',
     },
-    dueDate: {
-        type: Date.now,
+    due_date: {
+        type: Date,
     },
     user_id: {
         type: mongoose.Schema.Types.ObjectId,
