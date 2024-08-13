@@ -7,7 +7,7 @@ const createTask = async (req, res) => {
             category: req.body.category,
             description: req.body.description,
             status : req.body.status,
-            due_date : req.boy.due_date,
+            due_date : req.body.due_date,
             user_id: req.body.user_id,
             created_date: new Date()
         })
