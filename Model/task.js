@@ -19,7 +19,7 @@ const TaskSchema = new mongoose.Schema({
         default: 'Pending',
     },
     dueDate: {
-        type: Date,
+        type: Date.now,
     },
     user_id: {
         type: mongoose.Schema.Types.ObjectId,
